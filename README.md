@@ -7,3 +7,9 @@ To view this website you must do the follow:
 4.) Verify that there is a green check mark for Apache & MySQL (If there is any problem with this part please check your firewall access to this program. Or contact project leader 1082322403@sjc.bz)
 5.) Click on LocalHost to be sent to the website
 6.) Enjoy!
+
+#Download
+The zip file has last updated code.
+Current Code is within the folder. 
+Download current code for experimental version.
+Donwload Zip File for stable version.
