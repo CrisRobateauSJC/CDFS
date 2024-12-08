@@ -1,6 +1,42 @@
+@font-face {
+    font-family: NordHead;
+    src: url("./Miscalleanous/Nordhead/Nordhead\ Typeface.otf");
+}
+
 body{
     background-color: #cde7ca;
     width: 100vw;
     margin: 0px;
 }
 
+p{
+    font-family: NordHead;
+}
+
+li{
+    font-family: NordHead;
+}
+
+h1{
+    font-family: NordHead;
+}
+
+h2{
+    font-family: NordHead;
+}
+
+h3{
+    font-family: NordHead;
+}
+
+h4{
+    font-family: NordHead;
+}
+
+h5{
+    font-family: NordHead;
+}
+
+h6{
+    font-family: NordHead;
+}
