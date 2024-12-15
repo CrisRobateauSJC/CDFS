@@ -55,6 +55,115 @@
 
         <div style = "width: 100%; height: 7vh;"></div>
 
+        <div style="margin: 40px">
+        <fieldset>
+        <legend><h2> Relief Request Form </h2></legend>
+
+        <label><b> Personal Information </b></label>
+
+        <br>
+
+        <label for="fname" >First Name:</label>
+        <input type="text" id="fname" name="fname"required>
+        <label for="lname" style="padding-left: 20px">Last Name:</label>
+        <input type="text" id="lname" name="lname"required>
+
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        
+        <label for="email" style="padding-left: 20px">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <br>
+        <br>
+
+        <label for="address"> Home Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="country" style="padding-left: 20px">Country of Residence:</label>
+            <select id="country" required>
+            <option>Anguilla</option>
+            <option>Antigua and Barbuda</option>
+            <option>Aruba</option>
+            <option>The Bahamas</option>
+            <option>Barbados</option>
+            <option>Bay Islands</option>
+            <option>Belize</option>
+            <option>Bermuda</option>
+            <option>Bonaire</option>
+            <option>British Virgin Islands</option>
+            <option>Cayman Islands</option>
+            <option>Cuba</option>
+            <option>Curaçao</option>
+            <option>Dominica</option>
+            <option>Dominican Republic</option>
+            <option>French Guiana</option>
+            <option>Grenada</option>
+            <option>Guadeloupe</option>
+            <option>Guyana</option>
+            <option>Haiti</option>
+            <option>Jamaica</option>
+            <option>Martinique</option>
+            <option>Monserrat</option>
+            <option>St. Barts</option>
+            <option>St. Kitts and Nevis</option>
+            <option>St. Lucia</option>
+            <option>St. Martin</option>
+            <option>St. Vincent and the Grenadines</option>
+            <option>Trinidad and Tobago</option>
+            <option>US Virgin Islands</option>
+            </select> 
+
+        
+        <br>
+        <br>
+        
+        <label><b> Documentation </b></label> 
+
+        <br>
+
+        <label for="damage"> Official damage assessment: </label>
+        <input type="file" id="damage" name="damage" required>
+
+        <label for="personal-id"> Proof of citizenship (SS card, passport, etc.): </label>
+        <input type="file" id="personal-id" name="personal-id" required>
+
+        <br>
+        <br>
+
+        <label for="income"> Proof of income (job letter, recent pay slip): </label>
+        <input type="file" id="income" name="income" required>
+
+        <label for="disaster" style="padding-left: 20px">Disaster:</label>
+            <select id="disaster" required>
+            <option>Hurricane</option>
+            <option>Flood</option>
+            <option>Earthquake</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label><b> Banking Information </b></label>
+
+        <br>
+
+        <label for="bank"> Bank Name: </label>
+        <input type="text" id="bank" name="bank" required>
+
+        
+        <label for="account" style="padding-left: 20px"> Account Number: </label>
+        <input type="text" id="account" name="account" required>
+        <br>
+        <br>
+        <input type="submit" value="Request Assistance" >
+
+        </fieldset>
+        </div>
+        
         <script> 
             function menu(){
                 if (document.querySelector("#Menu").style.display == "none"){

@@ -17,9 +17,23 @@
             p#Pages:hover{
                 background-color: #849782;
             }
+
+            button#Table{
+                height: 8vh; 
+                width: 12vw; 
+                border: 8px #90b493 solid; 
+                font-family: NordHead;  
+                color: #b2d4b6;
+                background-color: #4b514a;
+                font-size: 1.5vw;
+            }
+
+            button#Table:hover{
+                background-color: #849782;
+            }
         </style>
     </head>
-    <body>
+    <body style = "overflow-x: hidden;">
         <div style = "width: 100%; height: 7vh; display: flex; background-color: #b2d4b6; border-bottom: 7.5px #728370 solid; position: fixed; z-index: 100;">
             <a href = "../../../index.php" style = "display: flex;"><img src = "./Image/Logo.png" style = "padding-left: 0.5vmin; cursor: pointer;"></a>
             <div style = "width: 100%; height: 100%; display: flex; flex-direction: row-reverse;">
@@ -54,7 +68,29 @@
         </div>
 
         <div style = "width: 100%; height: 7vh;"></div>
-
+        <div style = "width: 100%; height: 70vh;"></div>
+        <div style = "width: 100%; display:flex; ">
+            <select>
+                <option>2024</option>
+            </select>
+        </div>
+        <div style = "width: 100%; height: 70vh; display:flex; justify-content: center;">
+            <div style = "width: 80%; height: 75%; background-color: #b2d4b6;">
+                <div style = "background-color: #90b493; width: 100%; height: 8%; border-bottom: 0.5vw #728370 solid; display: flex; flex-wrap: nowrap; align-items: center;">
+                    <p>Natural Disaster</p>
+                    <p>Help Requests</p>
+                    <p>Approx. Destruction</p>
+                    <p>Funding Allocated</p>
+                </div>
+            </div>
+        </div>
+        <div style = "width: 100%; height: 92vh; background-color: #b2d4b6;">
+            <p style = "width: 100%; text-align: center; margin: 0; padding-top: 1.3vw; font-size: 7vmin; padding-bottom: 1.3vw;">Graph Showing Stonks</p>
+            <div style = "margin-left: 12.5%; width: 75%; border-left: 10px black solid; height: 75%; border-bottom: 10px black solid;">
+            </div>
+            <div>
+            </div>
+        </div>
         <script> 
             function menu(){
                 if (document.querySelector("#Menu").style.display == "none"){

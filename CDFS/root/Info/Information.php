@@ -17,6 +17,14 @@
             p#Pages:hover{
                 background-color: #849782;
             }
+
+            p{
+                font-size:20px
+            }
+
+            div-a{
+                text-align: right;
+            }
         </style>
     </head>
     <body>
@@ -55,6 +63,50 @@
 
         <div style = "width: 100%; height: 7vh;"></div>
 
+        <section class="information" style=margin:10px;>
+            <h3>About CDFS</h3>
+            <p>The Caribbean Disaster, Finance and Statistics program exists to record data on the damage 
+                caused by natural disasters in the Caribbean, and assist in the recovery of affected countries' 
+                populations. This program also exists to provide an avenue for citizens that have lost property 
+                or belongings to request financial assistance from their local government. Government workers 
+                can also utilize this program to assess the number of aid requests, and locate areas where 
+                assistance is most needed.
+            </p>
+
+            <br>
+
+            <div-a>
+            <h3>Natural Disasters</h3>
+            <p>The Caribbean region is affected by a variety of natural disasters, each with their own dangers 
+                to human life and property. As islands make up the majority of the region, the effects of these 
+                disasters can be even more severe than they would be on the mainland. Catastrophes such as 
+                hurricanes and floods can be predicted and prepared for, but other disasters such as earthquakes 
+                or mudslides may happen suddenly, without warning. Regardless of the time a country may have to 
+                prepare, the aftermath of a disaster can be a difficult time for many.
+            </p>
+            </div-a>
+
+            <br>
+
+           <h3>Finance</h3>
+            <p>Donations collected through the CDFS website are distributed to governments of countries recently 
+                affected by confirmed disasters. Data from the aid request feature is also shared, to allow for 
+                accurate allocation of these funds, as well as government funds allocated for disaster relief.
+            </p>
+
+            <br>
+
+            <div-a>
+            <h3>Funding</h3>
+            <p>Funding for the CDFS program is provided by CARICOM. Donations received by CDFS go directly to 
+                disaster victims in afflicted countries.
+            </p>
+            </div-a>
+
+        </section>
+
+
+        
         <script> 
             function menu(){
                 if (document.querySelector("#Menu").style.display == "none"){

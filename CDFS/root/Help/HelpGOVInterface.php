@@ -17,6 +17,23 @@
             p#Pages:hover{
                 background-color: #849782;
             }
+            button#Table{
+                height: 8vh; 
+                width: 12vw; 
+                border: 8px #90b493 solid; 
+                font-family: NordHead;  
+                color: #b2d4b6;
+                background-color: #4b514a;
+                font-size: 1.5vw;
+            }
+
+            button#Table:hover{
+                background-color: #849782;
+            }
+            p#Format{
+                margin: 0;
+                width: 20%;
+            }
         </style>
     </head>
     <body>
@@ -53,7 +70,48 @@
             <p id = "Pages" onclick = "subMenu2(this)">Statistics Input</p>
         </div>
 
-        <div style = "width: 100%; height: 7vh;"></div>
+        <div style = "width: 100%; height: 8vh;"></div>
+        <div id = "GOV" style = "margin-top: 2vh;">
+            <div style = "display : flex; flex-direction: row-reverse;">
+                <button id = "Table" style = "margin-right: 5vw; margin-left: 0.5vw; "> Completed </button>
+                <button id = "Table" style = "margin-right: 0.5vw; margin-left: 2vw;"> Denied </button>
+            </div>
+            <div style = "width: 90vw; height: 75vh; background-color: #b2d4b6; margin-left: 5vw; margin-right: 5vw; margin-top: 2vh;">
+                <div style = "background-color: #90b493; width: 100%; height: 8%; border-bottom: 0.5vw #728370 solid; display: flex; flex-direction: row-reverse; flex-wrap: nowrap; align-items: center;">    
+                    <input type = "text" style = "border: 0; height: 45%; margin-right: 2%; background-color: #cde7ca;" placeholder = "Search...">
+                    <p style = "width: 100%; margin: 0; margin-left: 1vw; font-size: 2.5vw;">Requests</p>
+                </div>
+                <div style = "width: 100%; height: 84%;">
+                    <div style = "width: 100%; height: 8.4%; border-bottom: 0.2vw #728370 solid; display: flex; text-align: center; align-items: center;">
+                        <p id = "Format"> User </p>
+                        <p id = "Format">ID</p>
+                        <p id = "Format" style = "font-size: 1.5vw;"> MM/DD/YYYY hh:mm:ss </p>
+                        <p id = "Format"> District </p>
+                        <p id = "Format" style = "display: none;"> Status <button style = "font-size: 2.4vmin; border: 3px black solid; cursor: pointer;">&#9998;</button></p>
+                        <input type="text" placeholder = "Status" style = "width: 20%; height: 50%;">
+                        <button style = "margin-left: 2vw; width: 3.5vw; color: green; border: 0px; background-color: #4b514a; font-size: 3.5vmin; cursor: pointer; height: 100%;">&#10003;</button>
+                        <button style = "margin-left: 2vw; width: 3.5vw; color: red; border: 0px; background-color: #4b514a; font-size: 3.5vmin; cursor: pointer; height: 100%;">X</button>
+                    </div>
+                    <div style = "width: 100%; height: 8.4%; border-bottom: 0.2vw #728370 solid; display: flex; text-align: center; align-items: center;">
+                        <p id = "Format"> User </p>
+                        <p id = "Format">ID</p>
+                        <p id = "Format" style = "font-size: 1.5vw;"> MM/DD/YYYY hh:mm:ss </p>
+                        <p id = "Format"> District </p>
+                        <p id = "Format" style = "display: none;"> Completed </p>
+                        <p id = "Format" style = "display: block;"> Denied </p>
+                        <p id = "Format" style = "font-size: 1.5vw;"> MM/DD/YYYY hh:mm:ss </p>
+                    </div>
+                </div>
+                
+                <div style = "background-color: #90b493; width: 100%; height: 8%; border-top: 0.5vw #728370 solid; display: flex; justify-content: center; align-items: center;">
+                    <p>&#9664;</p>
+                    <input type = "text" placeholder = "####" style = "width: 2%; height: 40%;">
+                    <p>&#9654;</p>
+                </div>
+            </div>
+        </div>
+        <div id = "User">
+        </div>
 
         <script> 
             function menu(){
